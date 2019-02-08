@@ -567,15 +567,11 @@ Wire Wire Line
 Text Label 950  6000 0    50   ~ 0
 SCLK
 Wire Wire Line
-	1700 4700 950  4700
-Wire Wire Line
 	1700 4800 950  4800
 Wire Wire Line
 	1700 4900 950  4900
 Wire Wire Line
 	1700 5000 950  5000
-Text Label 950  4700 0    50   ~ 0
-PB0
 Text Label 950  4800 0    50   ~ 0
 PB1
 Text Label 950  4900 0    50   ~ 0
@@ -637,7 +633,7 @@ F 3 "" H 3500 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 3500 850  3    50   ~ 0
-PB0
+PA8
 $Comp
 L Device:R R3
 U 1 1 5C4F531B
@@ -680,7 +676,7 @@ F 3 "" H 3900 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 3900 850  3    50   ~ 0
-PB1
+PB2
 $Comp
 L Device:R R5
 U 1 1 5C4F7BA7
@@ -723,7 +719,7 @@ F 3 "" H 4300 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Label 4300 850  3    50   ~ 0
-PB2
+PB1
 $Comp
 L Device:R R6
 U 1 1 5C4FA655
@@ -1425,7 +1421,6 @@ NoConn ~ 4500 5400
 NoConn ~ 3000 6200
 NoConn ~ 3000 5900
 NoConn ~ 3000 5800
-NoConn ~ 3000 5500
 NoConn ~ 3000 5400
 NoConn ~ 3000 5300
 NoConn ~ 1700 5900
@@ -1672,4 +1667,8 @@ F 3 "" H 1000 1800 50  0001 C CNN
 	1    1000 1800
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3000 5500 3750 5500
+Text Label 3750 5500 2    50   ~ 0
+PA8
 $EndSCHEMATC
