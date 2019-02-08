@@ -212,13 +212,13 @@ Connection ~ 1350 1700
 Wire Wire Line
 	1350 1700 1700 1700
 Wire Notes Line
-	800  1900 2700 1900
+	800  2050 2700 2050
 Wire Notes Line
-	2700 1900 2700 700 
+	2700 2050 2700 700 
 Wire Notes Line
 	2700 700  800  700 
 Wire Notes Line
-	800  700  800  1900
+	800  700  800  2050
 Text Notes 850  800  0    50   ~ 0
 Decoupling capacitors for stm32\n
 Wire Wire Line
@@ -1615,10 +1615,10 @@ F 3 "" H 5500 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R7
 U 1 1 5C528FF5
 P 5100 1250
-F 0 "R?" H 5170 1296 50  0000 L CNN
+F 0 "R7" H 5170 1296 50  0000 L CNN
 F 1 "180R" H 5170 1205 50  0000 L CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 5030 1250 50  0001 C CNN
 F 3 "~" H 5100 1250 50  0001 C CNN
@@ -1631,10 +1631,10 @@ Wire Wire Line
 Wire Wire Line
 	5100 1400 5100 1500
 $Comp
-L Device:LED D?
+L Device:LED D6
 U 1 1 5C528FFF
 P 5100 1650
-F 0 "D?" V 5138 1533 50  0000 R CNN
+F 0 "D6" V 5138 1533 50  0000 R CNN
 F 1 "LED" V 5047 1533 50  0000 R CNN
 F 2 "LEDs:LED_0603_HandSoldering" H 5100 1650 50  0001 C CNN
 F 3 "~" H 5100 1650 50  0001 C CNN
@@ -1661,4 +1661,15 @@ Wire Wire Line
 	1700 5100 950  5100
 Text Label 950  5100 0    50   ~ 0
 PB4
+$Comp
+L power:GND #PWR?
+U 1 1 5C5EA05C
+P 1000 1800
+F 0 "#PWR?" H 1000 1550 50  0001 C CNN
+F 1 "GND" H 1005 1627 50  0000 C CNN
+F 2 "" H 1000 1800 50  0001 C CNN
+F 3 "" H 1000 1800 50  0001 C CNN
+	1    1000 1800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
