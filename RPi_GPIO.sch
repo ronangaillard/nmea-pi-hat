@@ -1671,4 +1671,5 @@ Wire Wire Line
 	3000 5500 3750 5500
 Text Label 3750 5500 2    50   ~ 0
 PA8
+NoConn ~ 1700 4700
 $EndSCHEMATC
