@@ -518,19 +518,15 @@ F 3 "" H 6600 5600 50  0001 C CNN
 	1    6600 5600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4500 5700 4300 5700
-Wire Wire Line
-	4300 5700 4300 5800
 $Comp
 L power:GND #PWR?
 U 1 1 5C4D2E71
-P 4300 5800
-F 0 "#PWR?" H 4300 5550 50  0001 C CNN
-F 1 "GND" H 4305 5627 50  0000 C CNN
-F 2 "" H 4300 5800 50  0001 C CNN
-F 3 "" H 4300 5800 50  0001 C CNN
-	1    4300 5800
+P 3900 5850
+F 0 "#PWR?" H 3900 5600 50  0001 C CNN
+F 1 "GND" H 3905 5677 50  0000 C CNN
+F 2 "" H 3900 5850 50  0001 C CNN
+F 3 "" H 3900 5850 50  0001 C CNN
+	1    3900 5850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1411,8 +1407,6 @@ NoConn ~ 4500 6900
 NoConn ~ 4500 6800
 NoConn ~ 4500 6700
 NoConn ~ 4500 6600
-NoConn ~ 4500 6100
-NoConn ~ 4500 6000
 NoConn ~ 4500 5900
 NoConn ~ 4500 5800
 NoConn ~ 4500 5600
@@ -1672,4 +1666,18 @@ Wire Wire Line
 Text Label 3750 5500 2    50   ~ 0
 PA8
 NoConn ~ 1700 4700
+Text Notes 6700 5800 0    50   ~ 0
+Pin 10 and 8 reserved \nfor UART for Daisy \nAIS hat
+Wire Wire Line
+	3900 5700 3900 5850
+Wire Wire Line
+	3900 5700 4500 5700
+Wire Wire Line
+	4500 6100 4050 6100
+Wire Wire Line
+	4500 6000 4050 6000
+Text Label 4050 6000 0    50   ~ 0
+RESET
+Text Label 4050 6100 0    50   ~ 0
+BOOT0
 $EndSCHEMATC
