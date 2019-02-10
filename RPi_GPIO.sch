@@ -1407,7 +1407,6 @@ NoConn ~ 4500 6900
 NoConn ~ 4500 6800
 NoConn ~ 4500 6700
 NoConn ~ 4500 6600
-NoConn ~ 4500 5900
 NoConn ~ 4500 5800
 NoConn ~ 4500 5600
 NoConn ~ 4500 5500
@@ -1673,12 +1672,12 @@ Wire Wire Line
 Wire Wire Line
 	3900 5700 4500 5700
 Wire Wire Line
-	4500 6100 4050 6100
+	4500 5900 4050 5900
 Wire Wire Line
 	4500 6000 4050 6000
 Text Label 4050 6000 0    50   ~ 0
 RESET
-Text Label 4050 6100 0    50   ~ 0
+Text Label 4050 5900 0    50   ~ 0
 BOOT0
 $Comp
 L Device:R R10
@@ -1765,4 +1764,5 @@ Wire Wire Line
 Connection ~ 8800 5850
 Wire Wire Line
 	8800 5850 8750 5850
+NoConn ~ 4500 6100
 $EndSCHEMATC

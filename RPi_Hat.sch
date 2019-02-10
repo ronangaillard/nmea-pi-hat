@@ -146,8 +146,6 @@ Wire Wire Line
 	8000 2100 8000 1900
 Connection ~ 8000 1900
 Wire Wire Line
-	8000 1900 8200 1900
-Wire Wire Line
 	8000 2500 8000 2400
 $Comp
 L power:PWR_FLAG #FLG?
@@ -191,20 +189,6 @@ F 3 "" H 5350 2100 50  0001 C CNN
 	1    5350 2100
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 5C610BAB
-P 8200 1700
-F 0 "#FLG?" H 8200 1775 50  0001 C CNN
-F 1 "PWR_FLAG" H 8200 1874 50  0000 C CNN
-F 2 "" H 8200 1700 50  0001 C CNN
-F 3 "~" H 8200 1700 50  0001 C CNN
-	1    8200 1700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	8200 1700 8200 1900
-Connection ~ 8200 1900
-Wire Wire Line
-	8200 1900 8450 1900
+	8000 1900 8450 1900
 $EndSCHEMATC
